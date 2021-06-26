@@ -9,18 +9,26 @@ import { MyButton } from '../../styles/buttons';
 
 export default function Quebec() { 
   const [ timeClickedFull, setTimeClickedFull ] = useState();
+  const [ timeClickedOpen, setTimeClickedOpen ] = useState();
   
   function timeFullButtonClicked() {
-    let timeClicked = new Date().toString();
-    setTimeClickedFull(timeClicked)
+    let timeClicked = new Date().toLocaleString();
+    setTimeClickedFull(timeClicked);
   }
+
+  function timeOpenButtonClicked() {
+    let timeClicked = new Date().toLocaleString();
+    setTimeClickedOpen(timeClicked);
+  }
+
+  //need to make an object that holds the information on the parks so it can be looped over in the display
 
   return (
     <div className="park-container">
       Oka Beach National Park
       <p>
         {/* <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F0c%2F4b%2Fb3%2F24%2Foka-beach.jpg&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FAttraction_Review-g1575408-d10642386-Reviews-Oka_Beach-Oka_Quebec.html&tbnid=f5IXwWjkXWJc1M&vet=12ahUKEwja9enprbPxAhUEVt8KHZxcDiIQMygAegUIARCIAQ..i&docid=Ya3LVaAp2g3R3M&w=550&h=413&q=oka%20beach&ved=2ahUKEwja9enprbPxAhUEVt8KHZxcDiIQMygAegUIARCIAQ" alt="oka beach"></img> */}
-        <MyButton onClick={timeFullButtonClicked}>Full </MyButton>  {timeClickedFull} <MyButton>Open</MyButton>
+        <MyButton onClick={timeFullButtonClicked}>Full </MyButton>  {timeClickedFull} <MyButton onClick={timeOpenButtonClicked}>Open</MyButton> {timeClickedOpen}
 
       </p>
     </div>
