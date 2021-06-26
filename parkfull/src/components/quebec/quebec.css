@@ -4,6 +4,14 @@ body {
 
 .park-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 200px 200px 200px;
   grid-template-rows: 100px 100px 100px;
+}
+
+.individual-park {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+
 }
