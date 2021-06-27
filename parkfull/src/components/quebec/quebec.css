@@ -5,13 +5,19 @@ body {
 .park-container {
   display: grid;
   grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: 200px;
+  align-items: center;
+  justify-items: center;
+  
 }
 
 .individual-park {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* align-items: center; */
+  justify-content: center;
+  align-content: space-around;
+  height: calc(100% - 20px);
+
 
 }

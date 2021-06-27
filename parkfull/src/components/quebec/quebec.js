@@ -23,7 +23,7 @@ export default function Quebec() {
 
   //need to make an array of objects that holds the information on the parks so it can be looped over in the display
   const parks = [{
-    name:"Oka Beach",
+    name:"Oka Beach Provincial Park",
     province: "Quebec",
     country: "Canada"
   },
@@ -35,6 +35,11 @@ export default function Quebec() {
   {
     name: "Pink Lake",
     province: "Quebec",
+    country: "Canada"
+  },
+  {
+    name:"Sandbanks National Park",
+    province: "Ontario",
     country: "Canada"
   }
 ]
