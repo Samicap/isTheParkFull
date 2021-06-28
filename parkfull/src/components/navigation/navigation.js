@@ -8,7 +8,7 @@ export default function NavigationBar() {
     <div>
       <AppBar className="nav-bar" position="sticky">
         <Toolbar>
-          Hello
+          Navbar
         </Toolbar>
       </AppBar>
     </div>

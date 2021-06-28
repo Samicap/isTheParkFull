@@ -1,4 +1,6 @@
-
+body {
+  margin: 0;
+}
 
 .nav-bar {
   background-color: cadetblue;

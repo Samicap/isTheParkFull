@@ -3,8 +3,9 @@ body {
 }
 
 .park-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 33vw 33vw 33vw;
   grid-template-rows: 200px;
   align-items: center;
   justify-items: center;
